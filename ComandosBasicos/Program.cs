@@ -10,8 +10,8 @@ using System.Threading.Tasks;
         Crear variables
         Operar con variables
         Condicionales
-        Arrays
         Bucles
+        Arrays
 
     Siguientes temas:
         Objetos, clases, atributos y metodos
