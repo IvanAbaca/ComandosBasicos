@@ -12,9 +12,9 @@ using System.Threading.Tasks;
         Condicionales
         Arrays
         Bucles
+        Objetos, clases, atributos y metodos
 
     Siguientes temas:
-        Objetos, clases, atributos y metodos
         Encapsulamiento
         Herencia
         Polimorfismo
@@ -27,6 +27,21 @@ namespace PrimerAvistamiento
 {
     public class Program
     {
+        public class objeto
+        {
+            private int id;
+            private string? nombre;
+            public objeto()
+            {
+                this.id = 0;
+                this.nombre = "SinNombre";
+            }
+
+            public void mostrarObj()
+            {
+                Console.WriteLine("\nEste es un ejemplo de un metodo para el objeto:\n\nId: " + this.id + "\nNombre: " + this.nombre);
+            }
+        }
         static void Main(string[] args)
         {
             //Tipos de variables
@@ -70,8 +85,10 @@ namespace PrimerAvistamiento
                 Console.WriteLine("Vec[" + i + "] = " + vec[i - 1]);
                 i--;
             }
-            //Espera que se toque una letra
-            Console.ReadKey();
+
+            //Ejemplo de uso de objeto
+            objeto obj1 = new objeto();
+            obj1.mostrarObj();
         }
     }
 }
